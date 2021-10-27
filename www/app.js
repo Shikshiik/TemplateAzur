@@ -34,7 +34,6 @@ taskformElement.addEventListener('submit', async (e) => {
 
 async function getTasks() {
     const response = await fetch('/api/tasks');
-    console.lag(tasks);
     const tasks = await response.json();
     console.log(tasks);
 
